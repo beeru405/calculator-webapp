@@ -5,16 +5,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
 
+    @BeforeClass
+    public static void setupClass() {
+        WebDriverManager.chromedriver().setup();
+    }
+
     @Test
     public void testAddition() {
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get("http://localhost:8080/calculator-webapp");
+        driver.get("http://192.168.138.114:8080/calculator-webapp");
         
         WebElement num1Input = driver.findElement(By.name("num1"));
         num1Input.sendKeys("5");
