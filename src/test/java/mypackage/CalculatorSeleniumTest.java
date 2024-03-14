@@ -22,10 +22,11 @@ public class CalculatorSeleniumTest {
     }
 
     @Test
-    public void testCalculator() {
-        driver.get("http://192.168.138.114:8081/webapp-0.2");
+    public void testCalculatorAddition() {
+        // Navigate to the webpage
+        driver.get("http://192.168.138.114:8081/webapp-0.2/");
 
-        // Locate and interact with elements on the webpage
+        // Enter inputs and click on addition
         WebElement n1Field = driver.findElement(By.name("n1"));
         WebElement n2Field = driver.findElement(By.name("n2"));
         WebElement addButton = driver.findElement(By.name("r1"));
@@ -34,11 +35,11 @@ public class CalculatorSeleniumTest {
         n2Field.sendKeys("3");
         addButton.click();
 
+        // Get the result element and verify the result
         WebElement resultElement = driver.findElement(By.tagName("h1"));
         String resultText = resultElement.getText();
 
         assertEquals("Addition", resultText);
-        // Add more assertions as needed
     }
 
     @After
