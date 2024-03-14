@@ -8,8 +8,8 @@ public class CalculatorTest {
     @Test
     public void twoAndThreeIsFive() throws Exception {
         final long result = new Calculator().addFucn(2, 3);
-        //assertThat(result, is(5L));
-        assertThat(result, is(6L));
+        assertThat(result, is(5L));
+        //assertThat(result, is(6L));
     }
 
     @Test
