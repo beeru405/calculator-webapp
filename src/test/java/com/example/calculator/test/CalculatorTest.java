@@ -12,7 +12,7 @@ public class CalculatorTest {
 
     @Test
     public void testAddition() {
-        System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://localhost:8080/calculator-webapp");
         
