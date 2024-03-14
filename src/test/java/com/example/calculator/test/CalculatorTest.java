@@ -1,5 +1,6 @@
 package com.example.calculator.test;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,8 +12,8 @@ import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
 
-    @BeforeClass
-    public static void setupClass() {
+    @Before
+    public void setup() {
         WebDriverManager.chromedriver().setup();
     }
 
