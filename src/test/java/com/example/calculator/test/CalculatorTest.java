@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static org.junit.Assert.assertEquals;
@@ -15,6 +16,8 @@ public class CalculatorTest {
     @Before
     public void setup() {
         WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.logfile", "/usr/bin/chromedriver.log");
+        System.setProperty("webdriver.chrome.verboseLogging", "true");
     }
 
     @Test
