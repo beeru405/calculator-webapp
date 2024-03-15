@@ -32,41 +32,15 @@
             <version>4.4.3</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-         <dependencies>
-    <!-- Servlet API -->
-    <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>4.0.1</version>
-        <scope>provided</scope>
-    </dependency>
-    
-    <!-- Selenium WebDriver -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>3.141.59</version>
-        <scope>test</scope>
-    </dependency>
-
-    <!-- WebDriver for Chrome -->
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-        <version>4.4.3</version>
-        <scope>test</scope>
-    </dependency>
-
-    <!-- JUnit -->
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.13.2</version>
-        <scope>test</scope>
-    </dependency>
-</dependencies>
-
 
     <build>
         <plugins>
