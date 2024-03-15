@@ -15,7 +15,8 @@ public class CalculatorTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         driver = new ChromeDriver();
-        driver.get("http://192.168.138.114:8080/calculator");
+        //driver.get("http://192.168.138.114:8080/calculator");
+        driver.get("http://192.168.138.114:8081/webapp-0.2/");
     }
 
     @Test
